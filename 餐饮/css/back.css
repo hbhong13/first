@@ -1,0 +1,66 @@
+@import url("common/backcommon.css");
+
+.cat{
+	overflow: hidden; /* 清除浮动 */
+}
+.cat li{
+	width: 180px;
+	height: 180px;
+	float: left;
+	margin: 0 10px 20px;
+	border-radius: 5px;
+	background: #fff;
+	border: 1px solid #ccc;
+	position: relative;
+}
+.cat li div{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: flex;
+	align-items: center;
+}
+.icon{
+	justify-content: center;
+	flex-direction: column;
+}
+.icon .iconfont{
+	font-size: 120px;
+	margin-bottom: 20px;
+	color: #ff8400;
+}
+.icon .name{
+	font-size: 25px;
+	color: #aaa;
+}
+.eidt{
+	justify-content: space-around; /* 对齐方式:分散居中对齐 */
+	background: rgba(0,0,0,.9);
+	opacity: 0;
+}
+.eidt span{
+	color: #dbdbdb;
+	font-size: 80px;
+	cursor: pointer;
+}
+.eidt span:hover{
+	color: #ff8400;
+}
+.cat li:hover .eidt{
+	opacity: 1;
+	transition: .8s; /* 过渡 */
+}
+.add{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+.add span{
+	font-size: 140px;
+	color: #ccc;
+}
+.add:hover{
+	background: #eee;
+	transition: 0.3s;
+}
